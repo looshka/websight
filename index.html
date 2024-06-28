@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Космические путешествия</title>
+  <link rel="stylesheet" href="/Users/loshka/Desktop/САЙТ ТУРАГЕНСТВО/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Neutral+Face&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <header>
+    <div class="logo">
+        <a href="/">
+          <img src="images/ЛОГО.svg" alt="Galaxy Voyages" width="200" height="70">
+        </a>
+      </div>
+    <nav>
+      <a href="#" class="button catalog-button">Каталог</a>
+      <a href="#phone-number" class="button">Контакты</a>
+      <a href="index2.html" class="button">Корзина</a>
+    </nav>
+  </header>
+
+
+  <div class="container">
+
+    <div class="search-container">
+      <div class="search-bar">
+      <div class="input-container">
+        <p>Город вылета</p>
+        <input type="text" placeholder="Введите город">
+      </div>
+      <div class="input-container">
+        <p>Куда</p>
+        <input type="text" placeholder="Введите планету">
+      </div>
+      <div class="input-container input-container-2">
+        <p>Даты</p>
+        <input type="text" class="input-field" id="date-input" placeholder="Введите даты">
+        <span class="error-message" id="date-error"></span>
+      </div>
+      
+      <div class="input-container input-container-2">
+        <p>Кол-во ночей</p>
+        <div class="counter">
+          <button class="counter-btn counter-minus">-</button>
+          <input type="text" class="counter-value" value="1">
+          <button class="counter-btn counter-plus">+</button>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="search-container search-container-2">
+        <div class="search-bar search-bar-2">
+          <div class="input-container input-container-2">
+            <p>Кол-во человек</p>
+            <div class="counter">
+              <button class="counter-button" id="decrease">-</button>
+              <span id="count">1</span>
+              <button class="counter-button" id="increase">+</button>
+            </div>
+          </div>
+          <div class="input-container input-container-2">
+            <p>Курорт</p>
+            <select>
+              <option value="">Выберите курорт</option>
+              <option value="mars">Марс</option>
+              <option value="moon">Луна</option>
+              <option value="venus">Венера</option>
+              <option value="titan">Титан</option>
+              <option value="mars">Марс</option>
+              <option value="moon">Луна</option>
+              <option value="venus">Венера</option>
+              <option value="titan">Титан</option>
+              <option value="triton">Тритон</option>
+              <option value="pluto">Плутон</option>
+              <option value="callisto">Каллисто</option>
+              <option value="enceladus">Энцелад</option>
+            </select>
+          </div>
+          <div class="input-container input-container-2">
+            <p>Класс отеля</p>
+            <select>
+              <option value="">Выберите класс отеля</option>
+              <option value="3">3 звезды</option>
+              <option value="4">4 звезды</option>
+              <option value="5">5 звезд</option>
+            </select>
+          </div>
+          <div class="input-container input-container-2">
+            <p>Питание</p>
+            <select>
+              <option value="">Выберите питание</option>
+              <option value="breakfast">Завтрак</option>
+              <option value="half-board">Завтрак и обед</option>
+              <option value="all-inclusive">Все включено</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button href="#first-card" class="search-button search-button-2">Перейти в каталог</button>
+
+  </div> 
+
+  <button class="search-button">Найти</button>
+  
+  <div class="catalog-container">
+    <h1 class="catalog-title" id="catalog">Каталог туров</h1>
+
+    <div class="card-row">
+      <div id="card-1" class="card">
+        <img src="images/Луна.jpeg" alt="Луна">
+        <p class="planet-name">Луна</p>
+        <button class="card-button">В корзину</button>
+      </div>
+      <div class="card">
+        <img src="images/Венера.jpeg" alt="Венера">
+        <p class="planet-name">Венера</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Марс.jpg" alt="Марс">
+        <p class="planet-name">Марс</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Титан.jpeg" alt="Титан">
+        <p class="planet-name">Титан</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+    </div>
+
+    <div class="card-row">
+      <div class="card">
+        <img src="images/Тритон.jpeg" alt="Тритон">
+        <p class="planet-name">Тритон</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Плутон.jpeg" alt="Плутон">
+        <p class="planet-name">Плутон</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Каллисто.jpeg" alt="Каллисто">
+        <p class="planet-name">Каллисто</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+      <div class="card">
+        <img src="images/Энцелад.jpeg" alt="Энцелад">
+        <p class="planet-name">Энцелад</p>
+        <button class="card-button">В корзину</button>
+      </div>
+
+    </div>
+  </div>
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>г. Омск ул. Орджоникидзе, 12</p>
+        <p id="phone-number">+7(950)950-05-03</p>
+        <a href="mailto:travelplanet@yandex.ru">travelplanet@yandex.ru</a>
+        <p>Обратиться в тех.поддержку</p>
+      </div>
+      <div class="footer-right">
+        <a href="#card-1" class="footer-link">Каталог</a>
+        <a href="#" class="footer-link">Контакты</a>
+        <a href="#" class="footer-link">Корзина</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="/Users/loshka/Desktop/САЙТ ТУРАГЕНСТВО/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+
+/* Общие стили для всех размеров экранов */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #211C23;
+}
+
+/* Стили для экранов шириной от 320px до 767px */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Стили для экранов шириной от 768px до 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Стили для экранов шириной от 1024px и выше */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #F8F7FC;
+    width: 1920px;
+  }
+  
+  header {
+    width: 1920px;
+    height: 152px;
+    background-color: #D4D2FC;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 109px;
+    position: relative;
+  }
+
+  .logo {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 1400px;
+    position: absolute; /* расположение элемента относительно ближайшего родительского элемента с position: relative */
+  left: 107px; /* отступ слева */
+
+  width: auto; /* сохраняем исходную ширину изображения */
+  height: auto; /* сохраняем исходную высоту изображения */
+  }
+
+  nav {
+    display: flex;
+  }
+  
+  .button {
+    background-color: #E2F87F;
+    color: #211C23;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 60px;
+    text-decoration: none;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    margin-top: 54px;
+    font-size: 28px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: #d0f26f;
+  }
+
+  .container {
+    width: 1706px;
+    height: 406px;
+    background-color: #D4D2FC;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 131px;
+    position: absolute;
+    right: 107px;
+    left: 107px;
+  }
+  
+  .search-bar {
+    width: 1627px;
+    height: 123px;
+    background-color: #E2F87F;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 39px;
+    margin-bottom: 0px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 319px;
+    height: 123px;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    width: 349px;
+    height: 93px;
+    margin-top: 15px;
+  }
+  
+  .input-container p {
+    font-size: 28px;
+    color: #211C23;
+    margin-bottom: 10px;
+  }
+  
+  .input-container input {
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  
+  .search-bar-2 {
+    width: 1627px;
+    height: 123px;
+    background-color: #E2F87F;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 39px;
+    margin-top: 70px;
+    
+  }
+  
+  .input-container-2 {
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    padding: 15px 0;
+    text-align: center;
+  }
+  
+  .input-container-2 p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: #211C23;
+    margin-bottom: 10px;
+  }
+  
+  .input-container-2 input,
+  .input-container-2 select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    color: #211C23;
+  }
+  
+  .input-container-2 select {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMy45OTMgMjQgMTJ6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMjMuOTkzIDI0IEwyLjAwMiAyNC4wMDJ6IiBmaWxsPSJub25lIi8+CiAgICA8cGF0aCBkPSJNMjQuMDAyIDIzLjk5MyBMIDI0LjAwMiAyMi4wMDJ6IiBmaWxsPSJub25lIi8+CiAgPC9zdmc+);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .search-button {
+    background-color: #E2F87F;
+    width: 239px;
+    height: 68px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 33px;
+    color: #211C23;
+    border: none;
+    border-radius: 30px;
+    margin-top: 568px;
+    margin-left: 1572px;
+  }
+  
+  .search-button:hover {
+    cursor: pointer;
+    background-color: #d0f26f;
+  }
+  
+
+  .counter {
+    display: flex;
+    align-items: center;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    padding: 5px;
+  }
+  
+  .counter-button {
+    background-color: #E2F87F;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #211C23;
+  }
+  
+  #count {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: #211C23;
+  }
+
+  
+  .counter {
+    display: flex;
+    align-items: center;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    padding: 5px 50px;
+  }
+  
+  .counter-btn {
+    background-color: #E2F87F;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .counter-value {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 28px;
+    color: #211C23;
+    margin: 0 15px;
+    width: 50px;
+    text-align: center;
+  }
+
+
+
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .search-button-2 {
+    position: absolute;
+    margin-right: 2840px;
+    margin-top: 100px;
+    top: calc(100% + 164px);
+    width: 419px;
+    height: 80px;
+    background-color: #E2F87F;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 33px;
+    color: #211C23;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+
+  .catalog-container {
+    width: 1706px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 250px;
+  }
+  
+  .catalog-title {
+    font-family: 'Neutral Face', sans-serif;
+    font-size: 70px;
+    color: #211C23;
+    position: absolute;
+    top: 16px;
+    left: 0;
+    width: 100%;
+    padding-top: 50px;
+    margin-right: 300px;
+    position: relative; 
+    z-index: 1; 
+  }
+
+  h1 {
+    font-family: 'Neutral Face', sans-serif;
+  
+  }
+  
+
+  @font-face {
+    font-family: 'Neutral Face';
+    src: url('NeutralFace.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'Neutral Face', sans-serif;
+  }
+  
+  .card-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 185px;
+  }
+  
+  .card {
+    width: 352px;
+    height: 425px;
+    border-radius: 30px;
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .planet-name {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 33px;
+    color: #211C23;
+    position: absolute;
+    margin-top: 28px;
+    
+  }
+  
+  .card-button {
+    width: 160px;
+    height: 42px;
+    background-color: #E2F87F;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    cursor: pointer;
+    position: absolute;
+    bottom: -75px;
+    right: 10px;
+  }
+  
+
+
+  .footer {
+    width: 1920px;
+    height: 350px;
+    background-color: #D4D2FC;
+  }
+  
+  .footer-container {
+    width: 1706px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    
+  }
+  
+  .footer-left p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    margin-bottom: 45px;
+  }
+  
+  .footer-left a {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    text-decoration: none;
+    margin-bottom: 45px;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .footer-link {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    text-decoration: none;
+    margin-bottom: 45px;
+  }
+  

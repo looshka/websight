@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+
+/* Общие стили для всех размеров экранов */
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #211C23;
+}
+
+/* Стили для экранов шириной от 320px до 767px */
+
+@media (min-width: 320px) and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Стили для экранов шириной от 768px до 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Стили для экранов шириной от 1024px и выше */
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+
+@font-face {
+    font-family: 'Helvetica Neue Light';
+    src: url('puть_к_файлу_шрифта/Helvetica_Neue_Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #F8F7FC;
+    width: 1920px;
+  }
+  
+  header {
+    width: 1920px;
+    height: 152px;
+    background-color: #D4D2FC;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 109px;
+    position: relative;
+  }
+
+  .logo {
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-right: 1400px;
+    position: absolute; /* расположение элемента относительно ближайшего родительского элемента с position: relative */
+  left: 107px; /* отступ слева */
+
+  width: auto; /* сохраняем исходную ширину изображения */
+  height: auto; /* сохраняем исходную высоту изображения */
+  }
+
+  nav {
+    display: flex;
+  }
+  
+  .button {
+    background-color: #E2F87F;
+    color: #211C23;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 60px;
+    text-decoration: none;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    margin-top: 54px;
+    font-size: 28px;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: #d0f26f;
+  }
+
+
+
+  .footer {
+    width: 1920px;
+    height: 350px;
+    background-color: #D4D2FC;
+    margin-top: 1000px;
+  }
+  
+  .footer-container {
+    width: 1706px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 40px;
+    
+  }
+  
+  .footer-left p {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    margin-bottom: 45px;
+  }
+  
+  .footer-left a {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    text-decoration: none;
+    margin-bottom: 45px;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .footer-link {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28px;
+    color: #211C23;
+    text-decoration: none;
+    margin-bottom: 45px;
+  }
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .container {
+    width: 1706px;
+    height: 714px;
+    background-color: #D4D2FC;
+    border-radius: 30px;
+    position: absolute;
+    right: 107px;
+    left: 107px;
+    top:266px;
+  }
+  
+  .inner-container {
+    width: 1622px;
+    height: 602px;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    
+  }
+  
+  .top-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 56px;
+    width: 100%;
+    height: 311px;
+    border-radius: 30px;
+ 
+  }
+  
+  .top-block-text {
+    padding: 10px;
+    color: #211C23;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    width: 886px;
+    height: 120px;
+    text-align: left;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .top-block-text-2 {
+    padding: 7px;
+    color: #211C23;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    width: 494px;
+    height: 60px;
+    text-align: left;
+    position: absolute; /* задаем абсолютное позиционирование для второго прямоугольника */
+    top: 210px; /* задаем смещение относительно верхнего края контейнера */
+    font-size: 28pt;    
+  }
+  
+  .top-block-title {
+    font-size: 28pt;
+    font-weight: normal;
+    padding-top: 7px;
+  }
+
+  .top-block-title-2 {
+    margin-left: 10px;
+  }
+  
+  .top-block-subtitle {
+    font-size: 23pt;
+    font-weight: lighter;
+    padding-top: 10px;
+  }
+  
+  .top-block-image {
+    width: 607px;
+    height: 311px;
+    position: absolute;
+    left: 995px;
+  }
+  
+  .top-block-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  
+  .bottom-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 291px;
+    position: relative;
+  }
+  
+  .bottom-block-price {
+    width: 374px;
+    height: 65px;
+    background-color: #F8F7FC;
+    border-radius: 30px;
+    padding: 0 30px;
+    position: absolute;
+    top: 397px;
+    text-align: center;
+    margin-left: 345px;
+  }
+
+  .button-price:hover {
+    cursor: pointer;
+    background-color: #d0f26f;
+  }
+  
+  .bottom-block-price-text {
+    font-size: 28pt;
+    font-weight: normal;
+    color: #211C23;
+    padding-top: 10px;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    margin-left: 498px;
+    margin-top: 897px;
+  }
+  
+  .button-price {
+    width: 231px;
+    height: 50px;
+    background-color: #E2F87F;
+    border-radius: 30px;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    font-size: 28pt;
+    color: #211C23;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+  }
+  
+
+  
+  .rectangle3 {
+    width: 886px;
+    height: 354px;
+    background-color: #F8F7FC;
+    border-radius: 20px;
+    position: absolute;
+    top: 300px;
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .rectangle1, .rectangle2 {
+    width: 849px;
+    height: 143px;
+    background-color: #D4D2FC;
+    border-radius: 20px;
+    margin-bottom: 26px;
+  }
+  
+  .rectangle1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11px;
+    position: relative;
+    flex-direction: column; /* добавляем свойство flex-direction: column для вертикального расположения */
+    margin-top: 21px;
+    font-size: 19.5pt;
+  }
+
+  .rectangle1 p {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+  .rectangle4 {
+    width: 746px;
+    height: 44px;
+    background-color: #F8F7FC;
+    border-radius: 5px;
+    
+  }
+
+  .rectangle1 .rectangle4 {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    left: 11px;
+    margin-right: 78px;
+  }
+
+ 
+
+  .rectangle4:first-child {
+    margin-bottom: 10px;
+  }
+  
+  .rectangle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rectangle2 p {
+    font-size: 17pt;
+    color: #211C23;
+    margin-left: 19px;
+    font-weight: lighter;
+    line-height: 1.1;
+    margin-right: 200px;
+  }
